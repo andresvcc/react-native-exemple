@@ -1,4 +1,9 @@
 {
   "name": "TodoMVC",
-  "displayName": "TodoMVC"
+  "android": {
+    "package": "com.andresvcc88.todomvc"
+  },
+  "ios": {
+    "bundleIdentifier": "com.andresvcc88.todomvc"
+  }
 }

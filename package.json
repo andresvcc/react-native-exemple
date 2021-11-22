@@ -3,15 +3,38 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint ."
+    "dev": "next dev -p 3005",
+    "dev-expo": "expo start",
+    "build": "next build",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web-expo": "expo start --web",
+    "web": "next",
+    "eject-next": "next-expo customize",
+    "eject": "expo eject",
+    "lint": "standard",
+    "fix": "standard --fix",
+    "test": "jest"
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "expo": "^40.0.0",
+    "expo-av": "~8.7.0",
+    "next": "latest",
+    "react-dom": "16.13.1",
+    "react-native": "~0.63.4",
+    "react-native-elements": "^3.3.1",
+    "react-native-safe-area-context": "3.1.9",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-web": "~0.13.12",
+    "expo-splash-screen": "~0.8.0",
+    "expo-status-bar": "~1.0.3",
+    "expo-updates": "~0.4.0",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-screens": "~2.15.0",
+    "react-native-unimodules": "~0.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -21,7 +44,9 @@
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "@expo/next-adapter": "2.1.5",
+    "standard": "^16.0.3"
   },
   "jest": {
     "preset": "react-native"
